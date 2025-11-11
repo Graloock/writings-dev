@@ -3,30 +3,30 @@ import { Categories } from "@/components/CategoriesBar";
 export const categories: Categories[] = [
   {
     label: "JavaScript",
-    href: "blog/javascript",
+    href: "/javascript",
   },
   {
     label: "DevOps",
-    href: "blog/devops",
+    href: "/devops",
   },
   {
     label: "Cloud",
-    href: "blog/cloud",
+    href: "/cloud",
   },
   {
     label: "Terraform",
-    href: "blog/terraform",
+    href: "/terraform",
   },
   {
     label: "Architecture",
-    href: "blog/architecture",
+    href: "/architecture",
   },
   {
     label: "Scalability",
-    href: "blog/scalability",
+    href: "/scalability",
   },
   {
     label: "Explainers",
-    href: "blog/explainers",
+    href: "/explainers",
   },
 ];
