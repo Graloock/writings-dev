@@ -18,7 +18,7 @@ export default async function page({
   return (
     <div>
       <Logo title={categoryLabel} />
-      <CategoriesBar categories={categories} />
+      <CategoriesBar categories={categories} highlighted={category} />
     </div>
   );
 }
