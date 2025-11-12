@@ -8,8 +8,10 @@ export interface Categories {
 
 export default function CategoriesBar({
   categories,
+  children,
 }: {
   categories: Categories[];
+  children?: string;
 }) {
   return (
     <div className={"flex place-items-center my-3 relative"}>
@@ -18,12 +20,18 @@ export default function CategoriesBar({
         <Image src={"/list.svg"} alt={"Grid"} width={24} height={24} />
       </div>
       <div
-        className={
-          "space-x-9 text-[27px] text-[#909090] font-recursive overflow-x-auto pr-20"
-        }
+        className={"space-x-9 text-[27px] font-recursive overflow-x-auto pr-20"}
       >
         {categories.map((category) => (
-          <Link href={category.href} key={category.label}>
+          <Link
+            href={category.href}
+            key={category.label}
+            className={
+              category.label.toLowerCase() === children
+                ? "text-[#DCDCDC]"
+                : "text-[#909090]"
+            }
+          >
             {category.label}
           </Link>
         ))}
