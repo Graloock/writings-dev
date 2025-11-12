@@ -8,10 +8,10 @@ export interface Categories {
 
 export default function CategoriesBar({
   categories,
-  children,
+  highlighted,
 }: {
   categories: Categories[];
-  children?: string;
+  highlighted?: string;
 }) {
   return (
     <div className={"flex place-items-center my-3 relative"}>
@@ -27,7 +27,7 @@ export default function CategoriesBar({
             href={category.href}
             key={category.label}
             className={
-              category.label.toLowerCase() === children
+              category.label.toLowerCase() === highlighted
                 ? "text-[#DCDCDC]"
                 : "text-[#909090]"
             }
