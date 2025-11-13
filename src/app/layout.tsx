@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Recursive, Poppins } from "next/font/google";
 import "@/css/globals.css";
-import NavBar from "@/components/NavBar";
-import Separator from "@/components/Separator";
+import Header from "@/components/layout/Header";
+import Separator from "@/components/decorator/Separator";
 
 const poppins = Poppins({
   weight: "400",
@@ -31,7 +31,7 @@ export default function RootLayout({
       <body
         className={`${recursive.variable} ${poppins.variable} margin antialiased`}
       >
-        <NavBar />
+        <Header />
         {children}
         <Separator className={"my-3"} />
       </body>

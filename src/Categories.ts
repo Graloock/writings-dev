@@ -1,4 +1,4 @@
-import { Categories } from "@/components/CategoriesBar";
+import { Categories } from "@/components/layout/CategoriesBar";
 
 export const categories: Categories[] = [
   {

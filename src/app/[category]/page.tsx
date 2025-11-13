@@ -1,7 +1,7 @@
-import Logo from "@/components/Logo";
-import CategoriesBar from "@/components/CategoriesBar";
+import Logo from "@/components/layout/Logo";
+import CategoriesBar from "@/components/layout/CategoriesBar";
 import { categories } from "@/Categories";
-import findCategoryLabel from "@/app/modules/findCategoryLabel";
+import findCategoryLabel from "@/utils/findCategoryLabel";
 import { notFound } from "next/navigation";
 
 export default async function page({
@@ -10,10 +10,9 @@ export default async function page({
   params: Promise<{ category: string }>;
 }) {
   const { category } = await params;
-  const categoryLabel =
-    findCategoryLabel(category) !== undefined
-      ? findCategoryLabel(category)
-      : notFound();
+  const categoryLabel = findCategoryLabel(category)
+    ? findCategoryLabel(category)
+    : notFound();
 
   return (
     <div>

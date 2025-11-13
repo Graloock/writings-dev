@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function NavBar() {
+export default function Header() {
   return (
     <header className="grid grid-cols-[1fr_auto] items-center font-poppins">
       <div>
