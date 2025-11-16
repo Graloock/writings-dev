@@ -1,6 +1,10 @@
-import { Categories } from "@/components/layout/CategoriesBar";
+//Subject to change
+export interface Category {
+  href: string;
+  label: string;
+}
 
-export const categories: Categories[] = [
+export const categories: Category[] = [
   {
     label: "JavaScript",
     href: "/javascript",

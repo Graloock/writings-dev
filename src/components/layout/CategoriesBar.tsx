@@ -1,16 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-
-export interface Categories {
-  href: string;
-  label: string;
-}
+import { Category } from "@/Categories";
 
 export default function CategoriesBar({
   categories,
   highlighted,
 }: {
-  categories: Categories[];
+  categories: Category[];
   highlighted?: string;
 }) {
   return (
