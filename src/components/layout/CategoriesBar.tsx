@@ -1,6 +1,7 @@
-import Image from "next/image";
 import Link from "next/link";
 import { Category } from "@/Categories";
+import GridIcon from "@/icons/GridIcon";
+import ListIcon from "@/icons/ListIcon";
 
 export default function CategoriesBar({
   categories,
@@ -11,9 +12,9 @@ export default function CategoriesBar({
 }) {
   return (
     <div className={"flex place-items-center my-3 relative"}>
-      <div className={"flex space-x-[13px] shrink-0 pr-10"}>
-        <Image src={"/grid.svg"} alt={"Grid"} width={24} height={24} />
-        <Image src={"/list.svg"} alt={"Grid"} width={24} height={24} />
+      <div className={"flex space-x-[13px] text-[#909090] shrink-0 pr-10"}>
+        <GridIcon />
+        <ListIcon />
       </div>
       <div
         className={"space-x-9 text-[27px] font-recursive overflow-x-auto pr-20"}
