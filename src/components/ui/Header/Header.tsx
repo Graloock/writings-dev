@@ -1,6 +1,6 @@
-import HeaderHomepage from "@/components/layout/Header/HeaderHomepage";
-import HeaderNavigation from "@/components/layout/Header/HeaderNavigation";
-import HeaderMenu from "@/components/layout/Header/HeaderMenu";
+import HeaderHomepage from "@/components/ui/Header/HeaderHomepage";
+import HeaderNavigation from "@/components/ui/Header/HeaderNavigation";
+import HeaderMenu from "@/components/ui/Header/HeaderMenu";
 
 export default function Header() {
   return (
