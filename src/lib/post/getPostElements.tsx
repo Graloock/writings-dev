@@ -1,7 +1,7 @@
 import { Post } from "@/Posts";
 import PostElement from "@/components/ui/PostElement";
 
-export default function getPosts(Posts: Post[]) {
+export default function getPostElements(Posts: Post[]) {
   return Posts.map(({ image, alt, title, description, date, category }) => (
     <PostElement
       image={image}
