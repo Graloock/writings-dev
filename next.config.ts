@@ -5,6 +5,9 @@ const nextConfig: NextConfig = {
   basePath: "/writings-dev", // For project to know where it is
   assetPrefix: "/writings-dev/", // For images and routes?
   output: "export", // Enable static exports for GH Pages
+  images: {
+    unoptimized: true,
+  },
   reactCompiler: true,
 };
 

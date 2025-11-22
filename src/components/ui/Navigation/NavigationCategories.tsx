@@ -21,7 +21,7 @@ export default function NavigationCategories({
       >
         {categories.map((category) => (
           <Link
-            href={category.href}
+            href={`/${category.href}`}
             key={category.label}
             className={
               category.label.toLowerCase() === highlighted

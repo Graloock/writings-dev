@@ -7,30 +7,30 @@ export interface Category {
 export const categories: Category[] = [
   {
     label: "JavaScript",
-    href: "/javascript",
+    href: "javascript",
   },
   {
     label: "DevOps",
-    href: "/devops",
+    href: "devops",
   },
   {
     label: "Cloud",
-    href: "/cloud",
+    href: "cloud",
   },
   {
     label: "Terraform",
-    href: "/terraform",
+    href: "terraform",
   },
   {
     label: "Architecture",
-    href: "/architecture",
+    href: "architecture",
   },
   {
     label: "Scalability",
-    href: "/scalability",
+    href: "scalability",
   },
   {
     label: "Explainers",
-    href: "/explainers",
+    href: "explainers",
   },
 ];
