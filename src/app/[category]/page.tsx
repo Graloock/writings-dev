@@ -8,8 +8,8 @@ import { Posts } from "@/Posts";
 import Separator from "@/components/layout/Separator";
 
 export function generateStaticParams() {
-  return categories.map((category) => ({
-    category: category.href,
+  return categories.map(({ href }) => ({
+    category: href,
   }));
 }
 
