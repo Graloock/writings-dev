@@ -13,7 +13,6 @@ export interface Post {
 
 export const Posts: Post[] = [
   {
-    image: "/images/1.png",
     alt: "1",
     title: "Build continuous integration pipelines with GitHub Actions",
     description:
