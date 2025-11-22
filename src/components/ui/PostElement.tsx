@@ -18,7 +18,7 @@ export default function PostElement({
       <div className={"relative aspect-[19/9] mb-8 w-full"}>
         <Image
           className={"rounded-[22px] object-cover object-center"}
-          src={image ? image : "/images/placeholder.png"}
+          src={`/writings-dev/${image ? image : "/images/placeholder.png"}`}
           alt={alt}
           fill
           sizes={"(max-width: 640px) 100vw, (max-width: 768px) 66vw, 33vw"}
