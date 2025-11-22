@@ -11,19 +11,25 @@ export default function PostElement({
 }: Post) {
   return (
     <div
-      className={"font-poppins text-[#0F1217] bg-white rounded-[22px] p-[26px]"}
+      className={
+        "text-[#0F1217] flex flex-col text-[19px] bg-white rounded-[22px] p-[26px]"
+      }
     >
-      <Image
-        className={"rounded-[22px]"}
-        src={image ? image : "/images/placeholder.png"}
-        alt={alt}
-        height={160}
-        width={337.08}
-      />
-      <p className={"font-bold"}>{title}</p>
-      <p>{description}</p>
-      <div className={"flex flex-nowrap"}>
-        {date.toString()} • {category}
+      <div className={"relative aspect-[19/9] mb-8 w-full"}>
+        <Image
+          className={"rounded-[22px] object-cover object-center"}
+          src={image ? image : "/images/placeholder.png"}
+          alt={alt}
+          fill
+          sizes={"(max-width: 640px) 100vw, (max-width: 768px) 66vw, 33vw"}
+        />
+      </div>
+      <p className={"font-bold pb-3"}>{title}</p>
+      <p className={"pb-6"}>{description}</p>
+      <div className={"flex mt-auto text-[16px] flex-nowrap space-x-5"}>
+        <p>{date}</p>
+        <p>•</p>
+        <p>{category}</p>
       </div>
     </div>
   );
