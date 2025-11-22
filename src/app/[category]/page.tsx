@@ -7,6 +7,10 @@ import { getPostsByCategory } from "@/lib/post/getPosts";
 import { Posts } from "@/Posts";
 import Separator from "@/components/layout/Separator";
 
+export function generateStaticParams() {
+  return categories.map((category) => category.href);
+}
+
 export default async function page({
   params,
 }: {
