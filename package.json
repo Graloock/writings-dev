@@ -2,6 +2,7 @@
   "name": "writings-dev",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://graloock.github.io/writings-dev/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
