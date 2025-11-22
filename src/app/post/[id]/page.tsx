@@ -1,7 +1,9 @@
 import { Posts } from "@/Posts";
 
 export function generateStaticParams() {
-  return Posts.map((post) => post.alt);
+  return Posts.map((post) => ({
+    id: post.alt,
+  }));
 }
 
 export default async function Page({

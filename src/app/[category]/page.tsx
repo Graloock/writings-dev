@@ -8,7 +8,9 @@ import { Posts } from "@/Posts";
 import Separator from "@/components/layout/Separator";
 
 export function generateStaticParams() {
-  return categories.map((category) => category.href);
+  return categories.map((category) => ({
+    category: category.href,
+  }));
 }
 
 export default async function page({
@@ -20,7 +22,6 @@ export default async function page({
   const categoryLabel = findCategoryLabel(category)
     ? findCategoryLabel(category)
     : notFound();
-
   return (
     <div className={"w-full"}>
       <Logo title={categoryLabel} />
