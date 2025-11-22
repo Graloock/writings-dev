@@ -1,3 +1,7 @@
+export function generateStaticParams() {
+  return 0;
+}
+
 export default async function Page({
   params,
 }: {
