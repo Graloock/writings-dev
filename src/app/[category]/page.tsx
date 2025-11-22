@@ -1,8 +1,11 @@
 import Logo from "@/components/layout/Logo";
-import CategoriesBar from "@/components/layout/CategoriesBar";
+import NavigationBar from "@/components/ui/Navigation/NavigationBar";
 import { categories } from "@/Categories";
-import findCategoryLabel from "@/utils/findCategoryLabel";
+import findCategoryLabel from "@/lib/util/findCategoryLabel";
 import { notFound } from "next/navigation";
+import { getPostsByCategory } from "@/lib/post/getPosts";
+import { Posts } from "@/Posts";
+import Separator from "@/components/layout/Separator";
 
 export default async function page({
   params,
@@ -15,9 +18,17 @@ export default async function page({
     : notFound();
 
   return (
-    <div>
+    <div className={"w-full"}>
       <Logo title={categoryLabel} />
-      <CategoriesBar categories={categories} highlighted={category} />
+      <Separator />
+      <NavigationBar categories={categories} highlighted={category} />
+      <div
+        className={
+          "grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-[37px]"
+        }
+      >
+        {getPostsByCategory(Posts, categoryLabel)}
+      </div>
     </div>
   );
 }
