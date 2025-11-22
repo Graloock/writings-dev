@@ -3,7 +3,7 @@ import NavigationBar from "@/components/ui/Navigation/NavigationBar";
 import { categories } from "@/Categories";
 import findCategoryLabel from "@/lib/util/findCategoryLabel";
 import { notFound } from "next/navigation";
-import { getPostsByCategory } from "@/lib/post/getPosts";
+import { getPostsByCategory } from "@/lib/post/getPostElements";
 import { Posts } from "@/Posts";
 import Separator from "@/components/layout/Separator";
 

@@ -1,5 +1,7 @@
+import { Posts } from "@/Posts";
+
 export function generateStaticParams() {
-  return 0;
+  return Posts.map((post) => post.alt);
 }
 
 export default async function Page({

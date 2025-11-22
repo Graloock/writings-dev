@@ -3,7 +3,7 @@ import NavigationBar from "@/components/ui/Navigation/NavigationBar";
 import { categories } from "@/Categories";
 import Separator from "@/components/layout/Separator";
 import { Posts } from "@/Posts";
-import getPosts from "@/lib/post/getPosts";
+import getPostElements from "@/lib/post/getPostElements";
 
 export default function Home() {
   return (
@@ -19,7 +19,7 @@ export default function Home() {
           "grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-[37px]"
         }
       >
-        {getPosts(Posts)}
+        {getPostElements(Posts)}
       </div>
     </main>
   );

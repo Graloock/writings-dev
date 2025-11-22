@@ -13,27 +13,25 @@ export interface Post {
 
 export const Posts: Post[] = [
   {
-    alt: "1",
+    alt: "build-ci-pipelines-github-actions",
     title: "Build continuous integration pipelines with GitHub Actions",
     description:
-      "GitHub actions provide a really powerful way to integrate continuous " +
-      "integration and delivery into your applications.",
+      "GitHub actions provide a really powerful way to integrate continuous integration and delivery into your applications.",
     date: "June 24, 2022",
     category: "DevOps",
   },
   {
     image: "/images/2.png",
-    alt: "2",
+    alt: "python-for-absolute-beginners",
     title: "Python for the Absolute beginners",
     description:
-      "Python is the most popular programming language out there and " +
-      "it is used for so many different industries.",
+      "Python is the most popular programming language out there and it is used for so many different industries.",
     date: "June 24, 2022",
     category: "DevOps",
   },
   {
     image: "/images/1.png",
-    alt: "Mastering Async Patterns in Modern JavaScript",
+    alt: "mastering-async-patterns-modern-js",
     title: "Mastering Async Patterns in Modern JavaScript",
     description:
       "A deep dive into async/await, Promises, and the event loop to help you write cleaner, more reliable asynchronous code.",
@@ -42,7 +40,7 @@ export const Posts: Post[] = [
   },
   {
     image: "/images/2.png",
-    alt: "Optimizing CI/CD Pipelines for Faster Delivery",
+    alt: "optimizing-ci-cd-for-faster-delivery",
     title: "Optimizing CI/CD Pipelines for Faster Delivery",
     description:
       "Explore caching, parallelization, and workflow strategies that significantly reduce build and deployment times.",
@@ -51,7 +49,7 @@ export const Posts: Post[] = [
   },
   {
     image: "/images/3.png",
-    alt: "A Practical Guide to Deploying Workloads on AWS",
+    alt: "deploying-workloads-on-aws",
     title: "A Practical Guide to Deploying Workloads on AWS",
     description:
       "Learn how to deploy scalable, secure cloud applications using core AWS services and best practices.",
@@ -60,7 +58,7 @@ export const Posts: Post[] = [
   },
   {
     image: "/images/4.png",
-    alt: "Infrastructure as Code: Writing Reusable Terraform Modules",
+    alt: "reusable-terraform-modules",
     title: "Infrastructure as Code: Writing Reusable Terraform Modules",
     description:
       "Understand module design patterns and how reusable IaC components improve consistency and reduce duplication.",
@@ -69,7 +67,7 @@ export const Posts: Post[] = [
   },
   {
     image: "/images/5.png",
-    alt: "Designing Resilient Microservices Architectures",
+    alt: "resilient-microservices-architectures",
     title: "Designing Resilient Microservices Architectures",
     description:
       "Discover architectural patterns that help distributed systems handle failure gracefully.",
@@ -78,7 +76,7 @@ export const Posts: Post[] = [
   },
   {
     image: "/images/6.png",
-    alt: "Scaling Web Applications to Millions of Users",
+    alt: "scaling-web-apps-millions-users",
     title: "Scaling Web Applications to Millions of Users",
     description:
       "Learn core scaling strategies including load balancing, caching, queueing, and database sharding.",
@@ -87,7 +85,7 @@ export const Posts: Post[] = [
   },
   {
     image: "/images/7.png",
-    alt: "What Are Event-Driven Systems? A Simple Explanation",
+    alt: "event-driven-systems-explained",
     title: "What Are Event-Driven Systems? A Simple Explanation",
     description:
       "A beginner-friendly explanation of event-driven design, message queues, and asynchronous system behavior.",
@@ -96,7 +94,7 @@ export const Posts: Post[] = [
   },
   {
     image: "/images/8.png",
-    alt: "Understanding Serverless: When to Use It and When Not To",
+    alt: "understanding-serverless-pros-cons",
     title: "Understanding Serverless: When to Use It and When Not To",
     description:
       "Serverless can drastically simplify architecture — but only when used in the right scenarios.",
@@ -105,7 +103,7 @@ export const Posts: Post[] = [
   },
   {
     image: "/images/9.png",
-    alt: "The Hidden Power of JavaScript Proxies",
+    alt: "hidden-power-of-js-proxies",
     title: "The Hidden Power of JavaScript Proxies",
     description:
       "Proxies unlock advanced metaprogramming features that allow you to intercept and control JS operations.",
@@ -114,17 +112,16 @@ export const Posts: Post[] = [
   },
   {
     image: "/images/3.png",
-    alt: "3",
+    alt: "docker-from-zero-to-hero",
     title: "Docker from Zero to Hero",
     description:
-      "Learn what is Docker and  how Docker is used in the whole software " +
-      "development process.",
+      "Learn what is Docker and how Docker is used in the whole software development process.",
     date: "June 24, 2022",
     category: "DevOps",
   },
   {
     image: "/images/1.png",
-    alt: "Building Secure Infrastructure with Zero Trust Principles",
+    alt: "zero-trust-secure-infrastructure",
     title: "Building Secure Infrastructure with Zero Trust Principles",
     description:
       "Zero Trust is becoming the new security standard. Learn how to apply it across cloud and on-prem systems.",
@@ -133,7 +130,7 @@ export const Posts: Post[] = [
   },
   {
     image: "/images/2.png",
-    alt: "Managing Multi-Environment Deployments with Terraform Workspaces",
+    alt: "terraform-workspaces-multi-env",
     title: "Managing Multi-Environment Deployments with Terraform Workspaces",
     description:
       "Learn how Terraform Workspaces simplify managing dev, staging, and production infrastructure.",
@@ -142,7 +139,7 @@ export const Posts: Post[] = [
   },
   {
     image: "/images/3.png",
-    alt: "The Future of JavaScript: ECMAScript Features You Should Know",
+    alt: "future-of-javascript-ecmascript",
     title: "The Future of JavaScript: ECMAScript Features You Should Know",
     description:
       "Upcoming ECMAScript proposals that will transform how you write JavaScript in the next few years.",
@@ -151,7 +148,7 @@ export const Posts: Post[] = [
   },
   {
     image: "/images/4.png",
-    alt: "Improving Reliability with Multi-Region Cloud Architectures",
+    alt: "multi-region-cloud-architectures",
     title: "Improving Reliability with Multi-Region Cloud Architectures",
     description:
       "Learn how multi-region deployments prevent outages and improve global performance.",
@@ -160,7 +157,7 @@ export const Posts: Post[] = [
   },
   {
     image: "/images/5.png",
-    alt: "DevOps Anti-Patterns: What Teams Must Avoid",
+    alt: "devops-anti-patterns",
     title: "DevOps Anti-Patterns: What Teams Must Avoid",
     description:
       "Avoid the most common pitfalls that slow teams down and create bottlenecks in delivery pipelines.",
@@ -169,7 +166,7 @@ export const Posts: Post[] = [
   },
   {
     image: "/images/6.png",
-    alt: "Horizontal vs Vertical Scaling: When to Use Each Strategy",
+    alt: "horizontal-vs-vertical-scaling",
     title: "Horizontal vs Vertical Scaling: When to Use Each Strategy",
     description:
       "A clear breakdown of scaling techniques and how to choose the right approach for your application.",
@@ -178,7 +175,7 @@ export const Posts: Post[] = [
   },
   {
     image: "/images/7.png",
-    alt: "Why Distributed Systems Are So Hard — Explained Simply",
+    alt: "why-distributed-systems-are-hard",
     title: "Why Distributed Systems Are So Hard — Explained Simply",
     description:
       "Concepts like consensus, partitions, and clock drift explained without complex math or jargon.",
@@ -187,7 +184,7 @@ export const Posts: Post[] = [
   },
   {
     image: "/images/8.png",
-    alt: "Creating Modular Microservices with Domain-Driven Design",
+    alt: "ddd-modular-microservices",
     title: "Creating Modular Microservices with Domain-Driven Design",
     description:
       "DDD helps teams create loosely coupled microservices with clear boundaries and ownership.",
@@ -196,7 +193,7 @@ export const Posts: Post[] = [
   },
   {
     image: "/images/9.png",
-    alt: "How to Version Control Infrastructure Safely in Terraform",
+    alt: "terraform-version-control-safely",
     title: "How to Version Control Infrastructure Safely in Terraform",
     description:
       "Learn patterns for structuring Terraform repositories, separating environments, and preventing drift.",
@@ -205,61 +202,55 @@ export const Posts: Post[] = [
   },
   {
     image: "/images/4.png",
-    alt: "4",
+    alt: "build-ci-pipelines-github-actions-2",
     title: "Build continuous integration pipelines with GitHub Actions",
     description:
-      "GitHub actions provide a really powerful way to integrate continuous " +
-      "integration and delivery into your applications.",
+      "GitHub actions provide a really powerful way to integrate continuous integration and delivery into your applications.",
     date: "June 24, 2022",
     category: "DevOps",
   },
   {
     image: "/images/5.png",
-    alt: "5",
+    alt: "build-ci-pipelines-github-actions-3",
     title: "Build continuous integration pipelines with GitHub Actions",
     description:
-      "GitHub actions provide a really powerful way to integrate continuous " +
-      "integration and delivery into your applications.",
+      "GitHub actions provide a really powerful way to integrate continuous integration and delivery into your applications.",
     date: "June 24, 2022",
     category: "DevOps",
   },
   {
     image: "/images/6.png",
-    alt: "6",
+    alt: "build-ci-pipelines-github-actions-4",
     title: "Build continuous integration pipelines with GitHub Actions",
     description:
-      "GitHub actions provide a really powerful way to integrate continuous " +
-      "integration and delivery into your applications.",
+      "GitHub actions provide a really powerful way to integrate continuous integration and delivery into your applications.",
     date: "June 24, 2022",
     category: "DevOps",
   },
   {
     image: "/images/7.png",
-    alt: "7",
+    alt: "build-ci-pipelines-github-actions-5",
     title: "Build continuous integration pipelines with GitHub Actions",
     description:
-      "GitHub actions provide a really powerful way to integrate continuous " +
-      "integration and delivery into your applications.",
+      "GitHub actions provide a really powerful way to integrate continuous integration and delivery into your applications.",
     date: "June 24, 2022",
     category: "DevOps",
   },
   {
     image: "/images/8.png",
-    alt: "8",
+    alt: "build-ci-pipelines-github-actions-6",
     title: "Build continuous integration pipelines with GitHub Actions",
     description:
-      "GitHub actions provide a really powerful way to integrate continuous " +
-      "integration and delivery into your applications.",
+      "GitHub actions provide a really powerful way to integrate continuous integration and delivery into your applications.",
     date: "June 24, 2022",
     category: "DevOps",
   },
   {
     image: "/images/9.png",
-    alt: "9",
+    alt: "build-ci-pipelines-github-actions-7",
     title: "Build continuous integration pipelines with GitHub Actions",
     description:
-      "GitHub actions provide a really powerful way to integrate continuous " +
-      "integration and delivery into your applications.",
+      "GitHub actions provide a really powerful way to integrate continuous integration and delivery into your applications.",
     date: "June 24, 2022",
     category: "DevOps",
   },
