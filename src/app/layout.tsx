@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import { Recursive, Poppins } from "next/font/google";
 import "@/css/globals.css";
-import Header from "@/components/layout/Header";
-import Separator from "@/components/decorator/Separator";
+import Header from "@/components/ui/Header/Header";
+import Separator from "@/components/layout/Separator";
+import React from "react";
 
 const poppins = Poppins({
-  weight: "400",
+  weight: ["400", "600"],
   variable: "--font-poppins",
   subsets: ["latin"],
 });
