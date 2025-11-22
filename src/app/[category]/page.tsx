@@ -6,9 +6,12 @@ import { Posts } from "@/Posts";
 import Separator from "@/components/layout/Separator";
 
 export function generateStaticParams() {
-  return categories.map(({ href }) => ({
-    category: href,
-  }));
+  return categories.map(({ href }) => {
+    console.log(href);
+    return {
+      category: href,
+    };
+  });
 }
 
 export default async function page({
