@@ -1,9 +1,9 @@
-import Logo from "@/components/layout/Logo";
+import Logo from "@/components/ui/Logo";
 import NavigationBar from "@/components/ui/Navigation/NavigationBar";
 import { categories } from "@/Categories";
 import Separator from "@/components/layout/Separator";
 import { Posts } from "@/Posts";
-import getPostElements from "@/lib/post/getPostElements";
+import getPosts from "@/lib/post/getPosts";
 
 export default function Home() {
   return (
@@ -19,7 +19,7 @@ export default function Home() {
           "grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-[37px]"
         }
       >
-        {getPostElements(Posts)}
+        {getPosts(Posts)}
       </div>
     </main>
   );

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Logo from "@/components/layout/Logo";
+import Logo from "@/components/ui/Logo";
 
 export const metadata: Metadata = {
   title: "About",

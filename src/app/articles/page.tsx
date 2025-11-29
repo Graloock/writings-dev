@@ -1,4 +1,4 @@
-import Logo from "@/components/layout/Logo";
+import Logo from "@/components/ui/Logo";
 
 export default function Articles() {
   return (
