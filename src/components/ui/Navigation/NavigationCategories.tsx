@@ -12,7 +12,7 @@ export default function NavigationCategories({
   highlighted,
 }: NavigationCategoriesProps) {
   return (
-    <div className={"overflow-x-clip relative"}>
+    <div className={"min-w-0 relative"}>
       <GradientAccent direction={"left"} />
       <div
         className={
