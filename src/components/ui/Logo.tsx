@@ -1,4 +1,5 @@
 import LogoIcon from "@/icons/LogoIcon";
+import Link from "next/link";
 
 interface LogoProps extends React.HTMLAttributes<HTMLDivElement> {
   title?: string;
@@ -8,7 +9,9 @@ interface LogoProps extends React.HTMLAttributes<HTMLDivElement> {
 export default function Logo({ title, subtitle, ...rest }: LogoProps) {
   return (
     <div className="grid justify-items-center pt-[76px]" {...rest}>
-      <LogoIcon width={194.45} height={204.08} />
+      <Link href="/">
+        <LogoIcon width={194.45} height={204.08} />
+      </Link>
       <h1
         className={
           "font-recursive text-[#FF7575] text-5xl sm:text-7xl text-center"
