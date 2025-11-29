@@ -1,14 +1,14 @@
 import Image from "next/image";
-import { Post } from "@/Posts";
+import { PostProps } from "@/Posts";
 
-export default function PostElement({
+export default function Post({
   image,
   alt,
   title,
   description,
   date,
   category,
-}: Post) {
+}: PostProps) {
   return (
     <div
       className={
