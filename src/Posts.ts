@@ -1,7 +1,7 @@
 // Do not try this shi at home!
 // Better use db instead of this crap xD
 
-export interface Post {
+export interface PostProps {
   image?: string;
   alt: string;
   title: string;
@@ -11,7 +11,7 @@ export interface Post {
   category: string;
 }
 
-export const Posts: Post[] = [
+export const Posts: PostProps[] = [
   {
     alt: "build-ci-pipelines-github-actions",
     title: "Build continuous integration pipelines with GitHub Actions",
