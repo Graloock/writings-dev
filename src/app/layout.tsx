@@ -32,9 +32,11 @@ export default function RootLayout({
       <body
         className={`${recursive.variable} ${poppins.variable} margin antialiased`}
       >
-        <Header />
-        {children}
-        <Separator className={"my-3"} />
+        <div>
+          <Header />
+          {children}
+          <Separator className={"my-3"} />
+        </div>
       </body>
     </html>
   );
