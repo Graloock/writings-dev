@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function ListIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
