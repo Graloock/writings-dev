@@ -7,11 +7,11 @@ import Separator from "@/components/layout/Separator";
 import { PostList } from "@/PostList";
 import Posts, { PostQuery } from "@/components/layout/post/Posts";
 
-export function generateStaticParams() {
+/*export function generateStaticParams() {
   return categories.map(({ href }) => ({
     category: href,
   }));
-}
+}*/
 
 export default async function page({
   params,
