@@ -10,6 +10,7 @@
   --color-foreground: var(--foreground);
 
   /* Fonts settings */
+  --font-source-sans: var(--font-source-sans);
   --font-poppins: var(--font-poppins);
   --font-recursive: var(--font-recursive);
   --font-recursive--font-variation-settings: "slnt" -15;
