@@ -1,11 +1,22 @@
 import Logo from "@/components/ui/Logo";
-import NavigationBar from "@/components/ui/Navigation/NavigationBar";
+import NavigationBar from "@/components/ui/navigation/NavigationBar";
 import { categories } from "@/Categories";
 import Separator from "@/components/layout/Separator";
-import { Posts } from "@/Posts";
-import getPosts from "@/lib/post/getPosts";
+import { PostList } from "@/PostList";
+import Posts, { PostQuery } from "@/components/layout/post/Posts";
 
-export default function Home() {
+export default async function Home({
+  searchParams,
+}: {
+  searchParams: Promise<{ page?: number }>;
+}) {
+  const page = (await searchParams).page;
+
+  const posts: PostQuery = {
+    posts: PostList,
+    page: page,
+  };
+
   return (
     <main className="w-full">
       <Logo
@@ -14,13 +25,7 @@ export default function Home() {
       />
       <Separator />
       <NavigationBar categories={categories} />
-      <div
-        className={
-          "grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-[37px]"
-        }
-      >
-        {getPosts(Posts)}
-      </div>
+      <Posts {...posts} />
     </main>
   );
 }
