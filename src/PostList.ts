@@ -11,7 +11,7 @@ export interface PostProps {
   category: string;
 }
 
-export const Posts: PostProps[] = [
+export const PostList: PostProps[] = [
   {
     alt: "build-ci-pipelines-github-actions",
     title: "Build continuous integration pipelines with GitHub Actions",

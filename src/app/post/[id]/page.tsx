@@ -1,7 +1,7 @@
-import { Posts } from "@/Posts";
+import { PostList } from "@/PostList";
 
 export function generateStaticParams() {
-  return Posts.map((post) => ({
+  return PostList.map((post) => ({
     id: post.alt,
   }));
 }

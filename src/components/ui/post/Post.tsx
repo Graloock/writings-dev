@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { PostProps } from "@/Posts";
+import { PostProps } from "@/PostList";
 
 export default function Post({
   image,
@@ -15,10 +15,10 @@ export default function Post({
         "text-[#0F1217] flex flex-col text-[19px] bg-white rounded-[22px] p-[26px]"
       }
     >
-      <div className={"relative aspect-[19/9] mb-8 w-full"}>
+      <div className={"relative aspect-19/9 mb-8 w-full"}>
         <Image
           className={"rounded-[22px] object-cover object-center"}
-          src={`/writings-dev/${image ? image : "/images/placeholder.png"}`}
+          src={image ? image : "/images/placeholder.png"}
           alt={alt}
           fill
           sizes={"(max-width: 640px) 100vw, (max-width: 768px) 66vw, 33vw"}
