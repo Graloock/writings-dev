@@ -2,15 +2,15 @@ import GradientAccent from "@/components/layout/GradientAccent";
 import Link from "next/link";
 import { Category } from "@/Categories";
 
-interface NavigationCategoriesProps extends React.HTMLProps<HTMLDivElement> {
+export interface NavigationProps extends React.HTMLProps<HTMLDivElement> {
   categories: Category[];
-  highlighted?: string;
+  selectedCategory?: string;
 }
 
 export default function NavigationCategories({
   categories,
-  highlighted,
-}: NavigationCategoriesProps) {
+  selectedCategory,
+}: NavigationProps) {
   return (
     <div className={"min-w-0 relative"}>
       <GradientAccent direction={"left"} />
@@ -24,7 +24,7 @@ export default function NavigationCategories({
             href={`/${category.href}`}
             key={category.label}
             className={
-              category.label.toLowerCase() === highlighted
+              category.label.toLowerCase() === selectedCategory
                 ? "text-[#DCDCDC]"
                 : "text-[#909090]"
             }
