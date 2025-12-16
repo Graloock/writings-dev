@@ -5,9 +5,19 @@ import GithubIcon from "@/icons/GithubIcon";
 
 export default function Footer() {
   return (
-    <footer className={"flex justify-between align-middle py-7"}>
-      <div className={"flex items-center gap-4 font-source-sans text-3xl"}>
-        <p>writings.dev</p>
+    <footer
+      className={
+        "flex flex-col sm:flex-row place-items-center justify-between align-middle font-source-sans py-7"
+      }
+    >
+      <div
+        className={
+          "flex w-full justify-center sm:justify-start place-items-center gap-4 text-3xl"
+        }
+      >
+        <p>
+          <Link href={"/"}>writings.dev</Link>
+        </p>
         <p>&</p>
         <NextIcon className={"w-40"} />
       </div>
@@ -19,9 +29,7 @@ export default function Footer() {
           target={"_blank"}
         >
           <Button
-            className={
-              "font-source-sans cursor-pointer bg-black px-2 rounded-md flex gap-2"
-            }
+            className={"cursor-pointer bg-black px-2 rounded-md flex gap-2"}
           >
             <GithubIcon width={16} />
             Graloock
